@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TextureAtlas imagePath="logo.png" width="6530" height="710">
+	<SubTexture name="logo0000" x="5" y="5" width="1300" height="700" frameX="-0" frameY="-0" frameWidth="1300" frameHeight="700"/>
+	<SubTexture name="logo0002" x="1310" y="5" width="1300" height="700" frameX="-0" frameY="-0" frameWidth="1300" frameHeight="700"/>
+	<SubTexture name="logo0004" x="2615" y="5" width="1300" height="700" frameX="-0" frameY="-0" frameWidth="1300" frameHeight="700"/>
+	<SubTexture name="logo0006" x="3920" y="5" width="1300" height="700" frameX="-0" frameY="-0" frameWidth="1300" frameHeight="700"/>
+	<SubTexture name="logo0008" x="5225" y="5" width="1300" height="700" frameX="-0" frameY="-0" frameWidth="1300" frameHeight="700"/>
+</TextureAtlas>
