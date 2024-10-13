@@ -538,7 +538,7 @@ class GameState extends MusicBeatState
 
             notes.add(_note);
 
-            for (k in 0 ... Math.floor(note.length / (((60 / conductor.findTimeChangeAt(chart.tempo, note.time).tempo) * 1000.0) * 0.25)))
+            for (k in 0 ... Math.round(note.length / (((60 / conductor.findTimeChangeAt(chart.tempo, note.time).tempo) * 1000.0) * 0.25)))
             {
                 var sustain:Note = new Note();
 
@@ -760,7 +760,7 @@ class GameState extends MusicBeatState
 
                     noteSplash.animation.onFinish.add((name:String) -> noteSplash.kill());
 
-                    noteSplash.animation.play('${FlxG.random.getObject(noteSplash.textureData.animations).prefix} ${NoteSplash.directions[noteSplash.direction].toLowerCase()}');
+                    noteSplash.animation.play('${FlxG.random.getObject(noteSplash.textureData.animations).prefix} ${NoteSplash.directions[noteSplash.direction].toLowerCase()}', false, FlxG.random.bool());
 
                     noteSplash.scale.set(0.685, 0.685);
 
