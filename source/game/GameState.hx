@@ -327,43 +327,33 @@ class GameState extends MusicBeatState
 
         loadSong("...");
 
-        countdown = new Countdown(conductor);
+        var countdown:Countdown = new Countdown(conductor);
         
         countdown.camera = hudCamera;
 
-        countdown.onTick.add((tick:Int) ->
+        countdown.onPause.add(() ->
         {
-            if (tick < 5.0)
-            {
-                for (i in 0 ... spectatorGroup.members.length)
-                {
-                    var character:Character = spectatorGroup.members[i];
+            conductor.active = false;
+        });
 
-                    if (tick % character.danceInterval == 0.0)
-                        character.dance();
-                }
-
-                for (i in 0 ... opponentGroup.members.length)
-                {
-                    var character:Character = opponentGroup.members[i];
-
-                    if (tick % character.danceInterval == 0.0)
-                        character.dance();
-                }
-
-                for (i in 0 ... playerGroup.members.length)
-                {
-                    var character:Character = playerGroup.members[i];
-
-                    if (tick % character.danceInterval == 0.0)
-                        character.dance();
-                }
-            }
+        countdown.onResume.add(() ->
+        {
+            conductor.active = true;
         });
 
         countdown.onFinish.add(() ->
         {
+            conductor.time = 0.0;
+
             countdown.kill();
+
+            countdown.onPause.removeAll();
+
+            countdown.onResume.removeAll();
+
+            countdown.onFinish.removeAll();
+
+            countdown.onSkip.removeAll();
         });
 
         countdown.onSkip.add(() ->
@@ -371,6 +361,14 @@ class GameState extends MusicBeatState
             conductor.time = 0.0;
 
             countdown.kill();
+
+            countdown.onPause.removeAll();
+
+            countdown.onResume.removeAll();
+
+            countdown.onFinish.removeAll();
+
+            countdown.onSkip.removeAll();
         });
 
         countdown.start();
@@ -603,23 +601,20 @@ class GameState extends MusicBeatState
 
         if (songStarted)
         {
-            if (Math.abs(conductor.time - instrumental.time) > 25.0)
-                instrumental.time = conductor.time;
+            if (Math.abs(instrumental.time - conductor.time) >= 25.0)
+                conductor.time = instrumental.time;
 
             if (mainVocals != null)
-                if (Math.abs(instrumental.time - mainVocals.time) > 5.0)
+                if (Math.abs(instrumental.time - mainVocals.time) >= 5.0)
                     mainVocals.time = instrumental.time;
 
             if (opponentVocals != null)
-                if (Math.abs(instrumental.time - opponentVocals.time) > 5.0)
+                if (Math.abs(instrumental.time - opponentVocals.time) >= 5.0)
                     opponentVocals.time = instrumental.time;
 
             if (playerVocals != null)
-                if (Math.abs(instrumental.time - playerVocals.time) > 5.0)
+                if (Math.abs(instrumental.time - playerVocals.time) >= 5.0)
                     playerVocals.time = instrumental.time;
-
-            if (conductor.time > instrumental.length)
-                endSong();
         }
         else
         {
@@ -670,6 +665,21 @@ class GameState extends MusicBeatState
             }
         }
 
+        if (Preferences.gameModifiers["mirror"])
+        {
+            var mirroredDirections:Array<Int> = new Array<Int>();
+
+            for (i in 0 ... 4)
+                mirroredDirections.insert(0, i);
+
+            for (i in 0 ... chart.notes.length)
+            {
+                var note:ParsedNote = chart.notes[i];
+
+                note.direction = mirroredDirections[note.direction];
+            }
+        }
+
         TimingUtil.sort(chart.events);
 
         TimingUtil.sort(chart.timeChanges);
@@ -689,6 +699,8 @@ class GameState extends MusicBeatState
         eventIndex = 0;
 
         instrumental = FlxG.sound.load(AssetMan.sound(#if html5 Paths.mp3 #else Paths.ogg #end ('assets/songs/${name}/Instrumental'), true));
+
+        instrumental.onComplete = () -> endSong();
 
         if (Paths.exists(#if html5 Paths.mp3 #else Paths.ogg #end ('assets/songs/${name}/Vocals-Main')))
             mainVocals = FlxG.sound.load(AssetMan.sound(#if html5 Paths.mp3 #else Paths.ogg #end ('assets/songs/${name}/Vocals-Main'), true));
