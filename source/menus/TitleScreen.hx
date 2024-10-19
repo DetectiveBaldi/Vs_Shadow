@@ -19,7 +19,7 @@ import core.Paths;
 
 import extendable.MusicBeatState;
 
-class TitleScreenState extends MusicBeatState
+class TitleScreen extends MusicBeatState
 {
     public var sky:FlxSprite;
 
