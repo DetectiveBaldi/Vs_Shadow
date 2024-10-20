@@ -5,8 +5,6 @@ import flixel.FlxSprite;
 
 import flixel.graphics.frames.FlxAtlasFrames;
 
-import flixel.math.FlxMath;
-
 import flixel.sound.FlxSound;
 
 import flixel.tweens.FlxEase;
@@ -18,6 +16,8 @@ import core.AssetMan;
 import core.Paths;
 
 import extendable.MusicBeatState;
+
+import game.songs.Angry;
 
 class TitleScreen extends MusicBeatState
 {
@@ -114,7 +114,7 @@ class TitleScreen extends MusicBeatState
         {
             FlxG.camera.flash(FlxColor.WHITE, 0.5);
 
-            FlxG.camera.fade(FlxColor.BLACK, 1.0, () -> {}, true);
+            FlxG.camera.fade(FlxColor.BLACK, 1.0, () -> FlxG.switchState(() -> new Angry()), true);
 
             prompt.animation.play("highlighted");
 
