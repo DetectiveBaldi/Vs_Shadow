@@ -4,7 +4,7 @@ import openfl.display.Sprite;
 
 import flixel.FlxGame;
 
-import menus.TitleScreen;
+import menus.TitleState;
 
 class Main extends Sprite
 {
@@ -12,6 +12,6 @@ class Main extends Sprite
 	{
 		super();
 
-		addChild(new FlxGame(0, 0, () -> new OpeningState(() -> new TitleScreen()), 60, 60, false, false));
+		addChild(new FlxGame(0, 0, () -> new OpeningState(() -> new TitleState()), 60, 60, false, false));
 	}
 }
