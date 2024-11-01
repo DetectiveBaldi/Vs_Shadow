@@ -2,25 +2,25 @@ package game.levels;
 
 import openfl.filters.ColorMatrixFilter;
 
-import flixel.FlxSprite;
-
 import flixel.math.FlxMath;
 
-import flixel.tweens.FlxTween;
-
 import flixel.util.FlxColor;
-import flixel.util.FlxStringUtil;
 
 import core.AssetMan;
 import core.Paths;
 
 import game.notes.Note;
 
+import game.stages.HellishFields;
+
 class Level1 extends GameState
 {
-    public var desaturationEffect:ColorMatrixFilter;
+    public var colorFilter:ColorMatrixFilter;
 
-    public var apple:FlxSprite;
+    public function new():Void
+    {
+        super(new HellishFields());
+    }
 
     override function create():Void
     {
@@ -28,42 +28,57 @@ class Level1 extends GameState
 
         AssetMan.graphic(Paths.png("assets/images/game/Character/GARRETT"));
 
-        AssetMan.graphic(Paths.png('assets/images/game/levels/${FlxStringUtil.getClassName(this, true)}/apple'));
+        gameCamera.zoom = 0.65;
 
-        desaturationEffect = new ColorMatrixFilter([0.275, 0.275, 0.275, 0.0, 0.0, 0.275, 0.275, 0.275, 0.0, 0.0, 0.275, 0.275, 0.275, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0]);
+        gameCameraZoom = gameCamera.zoom;
+
+        gameCameraTarget.setPosition(3440.0, 675.0);
+
+        gameCamera.snapToTarget();
 
         spectator.visible = false;
 
         opponent.visible = false;
 
+        player.setPosition(3805.0, 645.0);
+
         var _opponent:Character = new Character(conductor, 0.0, 0.0, "assets/data/game/Character/SHADOW_THIRD", ARTIFICIAL);
 
-        _opponent.setPosition(-150.0, 15.0);
+        _opponent.setPosition(2775.0, 375.0);
 
         opponentMap[_opponent.data.name] = _opponent;
 
         opponentGroup.add(_opponent);
     }
 
-    override function update(elapsed:Float):Void
-    {
-        super.update(elapsed);
-
-        if (apple != null)
-            apple.scale.set(FlxMath.lerp(apple.scale.x, 1.0, 0.15), FlxMath.lerp(apple.scale.y, 1.0, 0.15));
-    }
-
     override function stepHit(step:Int):Void
     {
         super.stepHit(step);
 
+        if (step == 1312.0)
+        {
+            opponentMap["SHADOW_THIRD"].skipDance = true;
+
+            opponentMap["SHADOW_THIRD"].skipSing = true;
+
+            opponentMap["SHADOW_THIRD"].animation.play("point", true);
+
+            opponentMap["SHADOW_THIRD"].animation.onFinish.add((name:String) ->
+            {
+                if (name == "point")
+                    opponentMap["SHADOW_THIRD"].skipDance = false;
+            });
+        }
+
         if (step == 1344.0)
         {
-            opponentMap["SHADOW_THIRD"].visible = false;
+            gameCamera.flash(FlxColor.WHITE, conductor.crotchet * 0.001);
+
+            opponentMap["SHADOW_THIRD"].animation.finish();
 
             var _opponent:Character = new Character(conductor, 0.0, 0.0, "assets/data/game/Character/GARRETT", ARTIFICIAL);
 
-            _opponent.setPosition(-40.0, 75.0);
+            _opponent.setPosition(2950.0, 320.0);
     
             opponentMap[_opponent.data.name] = _opponent;
     
@@ -72,52 +87,26 @@ class Level1 extends GameState
 
         if (step == 2240.0)
         {
-            gameCamera.filters = [desaturationEffect];
+            gameCamera.filters = [new ColorMatrixFilter([0.275, 0.275, 0.275, 0.0, 0.0, 0.275, 0.275, 0.275, 0.0, 0.0, 0.275, 0.275, 0.275, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0])];
 
             gameCamera.flash(FlxColor.WHITE, conductor.crotchet * 0.001);
 
-            hudCamera.filters = [desaturationEffect];
-
-            apple = new FlxSprite(0.0, 0.0, AssetMan.graphic(Paths.png('assets/images/game/levels/${FlxStringUtil.getClassName(this, true)}/apple')));
-
-            apple.antialiasing = true;
-
-            apple.alpha = 0.0;
-
-            apple.screenCenter();
-
-            insert(members.indexOf(spectatorGroup), apple);
-
-            FlxTween.tween(apple, {alpha: 1.0}, conductor.crotchet * 0.001 * 1.5);
-        }
-
-        if (step == 2362.0)
-        {
-            opponentMap["SHADOW_THIRD"].visible = true;
-
-            opponentMap["SHADOW_THIRD"].y = -opponentMap["SHADOW_THIRD"].height;
-
-            FlxTween.tween(opponentMap["SHADOW_THIRD"], {y: 15.0}, conductor.crotchet * 0.001);
-
-            FlxTween.tween(opponentMap["GARRETT"], {x: 250.0}, conductor.crotchet * 0.001);
+            hudCamera.filters = [gameCamera.filters[0]];
         }
 
         if (step == 2366.0)
         {
             gameCamera.filters.resize(0);
 
-            gameCamera.flash(FlxColor.WHITE, conductor.crotchet * 0.001);
+            gameCamera.flash(FlxColor.WHITE, conductor.crotchet * 0.001, true);
 
             hudCamera.filters.resize(0);
 
-            opponentMap["GARRETT"].danceSteps[0] = "dance1";
+            opponentMap["SHADOW_THIRD"].skipSing = false;
         }
-    }
 
-    override function beatHit(beat:Int):Void
-    {
-        if (beat >= 560.0 && beat % 2.0 == 0.0)
-            apple.scale *= 1.15;
+        if (step == 2624.0)
+            gameCamera.flash(FlxColor.WHITE, conductor.crotchet * 0.001);
     }
 
     override function opponentNoteHit(note:Note):Void
