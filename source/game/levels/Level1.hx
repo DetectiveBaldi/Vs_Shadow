@@ -112,6 +112,6 @@ class Level1 extends GameState
         super.opponentNoteHit(note);
 
         if (conductor.step >= 2366.0)
-            healthBar.value = FlxMath.bound(healthBar.value - 1.65, healthBar.bar.min, healthBar.bar.max);
+            healthBar.value -= 1.65;
     }
 }
