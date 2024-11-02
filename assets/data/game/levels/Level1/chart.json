@@ -1,6 +1,394 @@
 {
 	"speed": 3.3,
-	"events": [],
+	"events": [
+		{
+			"name": "Camera Follow",
+			"time": 1276.596,
+			"value": {
+				"character": "SHADOW_THIRD",
+				"characterMap": "opponentMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 6382.97872340426,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 11489.3617021277,
+			"value": {
+				"character": "SHADOW_THIRD",
+				"characterMap": "opponentMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 16595.7446808511,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 21702.1276595745,
+			"value": {
+				"x": 3440,
+				"y": 675,
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 22978.7234042553,
+			"value": {
+				"character": "SHADOW_THIRD",
+				"characterMap": "opponentMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 28085.1063829787,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 33191.4893617021,
+			"value": {
+				"character": "SHADOW_THIRD",
+				"characterMap": "opponentMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 38297.8723404255,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 43404.2553191489,
+			"value": {
+				"character": "SHADOW_THIRD",
+				"characterMap": "opponentMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 48510.6382978724,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 53617.0212765958,
+			"value": {
+				"character": "SHADOW_THIRD",
+				"characterMap": "opponentMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 58723.4042553192,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 63829.7872340426,
+			"value": {
+				"character": "SHADOW_THIRD",
+				"characterMap": "opponentMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 68936.170212766,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 74042.5531914894,
+			"value": {
+				"character": "SHADOW_THIRD",
+				"characterMap": "opponentMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 79148.9361702128,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 84255.3191489361,
+			"value": {
+				"character": "SHADOW_THIRD",
+				"characterMap": "opponentMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 89361.7021276595,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 94468.0851063829,
+			"value": {
+				"character": "SHADOW_THIRD",
+				"characterMap": "opponentMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 99574.4680851063,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 104680.85106383,
+			"value": {
+				"x": 3440,
+				"y": 675,
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 107234.042553191,
+			"value": {
+				"character": "GARRETT",
+				"characterMap": "opponentMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 111849.427168576,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 116464.811783961,
+			"value": {
+				"character": "GARRETT",
+				"characterMap": "opponentMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 121080.196399345,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 125695.58101473,
+			"value": {
+				"character": "GARRETT",
+				"characterMap": "opponentMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 130310.965630115,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 134926.350245499,
+			"value": {
+				"character": "GARRETT",
+				"characterMap": "opponentMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 139541.734860884,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 144157.119476268,
+			"value": {
+				"character": "GARRETT",
+				"characterMap": "opponentMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 148772.504091653,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 153387.888707038,
+			"value": {
+				"character": "GARRETT",
+				"characterMap": "opponentMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 158003.273322422,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 162618.657937807,
+			"value": {
+				"character": "GARRETT",
+				"characterMap": "opponentMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 167234.042553191,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 171849.427168576,
+			"value": {
+				"character": "GARRETT",
+				"characterMap": "opponentMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 176464.811783961,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 181080.196399345,
+			"value": {
+				"x": 3200.5,
+				"y": 650,
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 185695.58101473,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 190310.965630115,
+			"value": {
+				"x": 3200.5,
+				"y": 650,
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 194926.350245499,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap",
+				"duration": -1
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 199541.734860884,
+			"value": {
+				"x": 3440,
+				"y": 675,
+				"duration": -1
+			}
+		}
+	],
 	"notes": [
 		{
 			"speed": 1,

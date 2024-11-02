@@ -15,8 +15,6 @@ import game.stages.HellishFields;
 
 class Level1 extends GameState
 {
-    public var colorFilter:ColorMatrixFilter;
-
     public function new():Void
     {
         super(new HellishFields());
