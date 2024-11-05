@@ -2,7 +2,7 @@ package game.levels;
 
 import openfl.filters.ColorMatrixFilter;
 
-import flixel.math.FlxMath;
+import flixel.FlxG;
 
 import flixel.util.FlxColor;
 
@@ -12,6 +12,8 @@ import core.Paths;
 import game.notes.Note;
 
 import game.stages.HellishFields;
+
+import menus.TitleState;
 
 class Level1 extends GameState
 {
@@ -26,7 +28,7 @@ class Level1 extends GameState
 
         AssetMan.graphic(Paths.png("assets/images/game/Character/GARRETT"));
 
-        gameCamera.zoom = 0.65;
+        gameCamera.zoom = 0.75;
 
         gameCameraZoom = gameCamera.zoom;
 
@@ -38,11 +40,11 @@ class Level1 extends GameState
 
         opponent.visible = false;
 
-        player.setPosition(3805.0, 645.0);
+        player.setPosition(3812.0, 645.0);
 
         var _opponent:Character = new Character(conductor, 0.0, 0.0, "assets/data/game/Character/SHADOW_THIRD", ARTIFICIAL);
 
-        _opponent.setPosition(2775.0, 375.0);
+        _opponent.setPosition(2658.0, 375.0);
 
         opponentMap[_opponent.data.name] = _opponent;
 
@@ -68,15 +70,20 @@ class Level1 extends GameState
             });
         }
 
+        if (step == 1328.0)
+            hudCamera.fade(FlxColor.WHITE, conductor.crotchet * 0.001 * 4.0);
+
         if (step == 1344.0)
         {
-            gameCamera.flash(FlxColor.WHITE, conductor.crotchet * 0.001);
+            hudCamera.stopFade();
+
+            hudCamera.flash(FlxColor.WHITE, conductor.crotchet * 0.001);
 
             opponentMap["SHADOW_THIRD"].animation.finish();
 
             var _opponent:Character = new Character(conductor, 0.0, 0.0, "assets/data/game/Character/GARRETT", ARTIFICIAL);
 
-            _opponent.setPosition(2950.0, 320.0);
+            _opponent.setPosition(2758.0, 320.0);
     
             opponentMap[_opponent.data.name] = _opponent;
     
@@ -87,24 +94,29 @@ class Level1 extends GameState
         {
             gameCamera.filters = [new ColorMatrixFilter([0.275, 0.275, 0.275, 0.0, 0.0, 0.275, 0.275, 0.275, 0.0, 0.0, 0.275, 0.275, 0.275, 0.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0])];
 
-            gameCamera.flash(FlxColor.WHITE, conductor.crotchet * 0.001);
-
             hudCamera.filters = [gameCamera.filters[0]];
+
+            hudCamera.flash(FlxColor.WHITE, conductor.crotchet * 0.001);
         }
 
         if (step == 2366.0)
         {
             gameCamera.filters.resize(0);
 
-            gameCamera.flash(FlxColor.WHITE, conductor.crotchet * 0.001, true);
-
             hudCamera.filters.resize(0);
+
+            hudCamera.flash(FlxColor.WHITE, conductor.crotchet * 0.001, true);
 
             opponentMap["SHADOW_THIRD"].skipSing = false;
         }
 
         if (step == 2624.0)
-            gameCamera.flash(FlxColor.WHITE, conductor.crotchet * 0.001);
+            hudCamera.flash(FlxColor.WHITE, conductor.crotchet * 0.001);
+    }
+
+    override function endSong():Void
+    {
+        FlxG.switchState(() -> new TitleState());
     }
 
     override function opponentNoteHit(note:Note):Void

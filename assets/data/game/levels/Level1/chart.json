@@ -1,5 +1,4 @@
 {
-	"speed": 3.3,
 	"events": [
 		{
 			"name": "Camera Follow",
@@ -194,8 +193,8 @@
 			"name": "Camera Follow",
 			"time": 104680.85106383,
 			"value": {
-				"x": 3440,
-				"y": 675,
+				"character": "SHADOW_THIRD",
+				"characterMap": "opponentMap",
 				"duration": -1
 			}
 		},
@@ -389,6 +388,7 @@
 			}
 		}
 	],
+	"name": "Angry",
 	"notes": [
 		{
 			"speed": 1,
@@ -17436,7 +17436,7 @@
 			"direction": 1
 		}
 	],
-	"id": "Angry",
+	"speed": 3.3,
 	"tempo": 188,
 	"timeChanges": [
 		{
