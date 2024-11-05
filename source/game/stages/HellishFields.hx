@@ -1,6 +1,5 @@
 package game.stages;
 
-import flixel.FlxBasic;
 import flixel.FlxSprite;
 
 import flixel.graphics.frames.FlxAtlasFrames;
@@ -8,7 +7,7 @@ import flixel.graphics.frames.FlxAtlasFrames;
 import core.AssetMan;
 import core.Paths;
 
-class HellishFields extends Stage<FlxBasic>
+class HellishFields extends Stage
 {
     var background:FlxSprite;
 
