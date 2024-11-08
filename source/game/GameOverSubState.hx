@@ -46,7 +46,7 @@ class GameOverSubState extends SteppingSubState
 
         var _player:Character = game.player;
 
-        player = new Character(conductor, 0.0, 0.0, 'assets/data/game/Character/BOYFRIEND_GAMEOVER', PLAYABLE);
+        player = new Character(conductor, 0.0, 0.0, Character.findConfig("assets/data/game/Character/BOYFRIEND_GAMEOVER"), PLAYABLE);
 
         player.skipDance = true;
 
@@ -67,7 +67,7 @@ class GameOverSubState extends SteppingSubState
     {
         super.update(elapsed);
 
-        if (player.data.danceSteps.contains(player.animation.name))
+        if (player.config.danceSteps.contains(player.animation.name))
         {
             if (FlxG.keys.justPressed.ENTER || FlxG.keys.justPressed.SPACE)
             {

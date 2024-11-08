@@ -1,5 +1,7 @@
 package game.levels;
 
+import haxe.Json;
+
 import openfl.filters.ColorMatrixFilter;
 
 import flixel.FlxG;
@@ -42,11 +44,11 @@ class Level1 extends GameState
 
         player.setPosition(3812.0, 645.0);
 
-        var _opponent:Character = new Character(conductor, 0.0, 0.0, "assets/data/game/Character/SHADOW_THIRD", ARTIFICIAL);
+        var _opponent:Character = new Character(conductor, 0.0, 0.0, Character.findConfig("assets/data/game/Character/SHADOW_THIRD"), ARTIFICIAL);
 
         _opponent.setPosition(2658.0, 375.0);
 
-        opponentMap[_opponent.data.name] = _opponent;
+        opponentMap[_opponent.config.name] = _opponent;
 
         opponentGroup.add(_opponent);
     }
@@ -81,11 +83,11 @@ class Level1 extends GameState
 
             opponentMap["SHADOW_THIRD"].animation.finish();
 
-            var _opponent:Character = new Character(conductor, 0.0, 0.0, "assets/data/game/Character/GARRETT", ARTIFICIAL);
+            var _opponent:Character = new Character(conductor, 0.0, 0.0, Character.findConfig("assets/data/game/Character/GARRETT"), ARTIFICIAL);
 
             _opponent.setPosition(2758.0, 320.0);
     
-            opponentMap[_opponent.data.name] = _opponent;
+            opponentMap[_opponent.config.name] = _opponent;
     
             opponentGroup.add(_opponent);
         }
