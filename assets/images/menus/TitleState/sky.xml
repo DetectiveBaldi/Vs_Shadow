@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<TextureAtlas imagePath="sky.png" width="1930" height="4200">
-	<SubTexture name="sky0000" x="5" y="5" width="1920" height="834" frameX="-0" frameY="-0" frameWidth="1920" frameHeight="1080"/>
-	<SubTexture name="sky0001" x="5" y="844" width="1920" height="834" frameX="-0" frameY="-0" frameWidth="1920" frameHeight="1080"/>
-	<SubTexture name="sky0002" x="5" y="1683" width="1920" height="834" frameX="-0" frameY="-0" frameWidth="1920" frameHeight="1080"/>
-	<SubTexture name="sky0003" x="5" y="2522" width="1920" height="834" frameX="-0" frameY="-0" frameWidth="1920" frameHeight="1080"/>
-	<SubTexture name="sky0004" x="5" y="3361" width="1920" height="834" frameX="-0" frameY="-0" frameWidth="1920" frameHeight="1080"/>
-</TextureAtlas>

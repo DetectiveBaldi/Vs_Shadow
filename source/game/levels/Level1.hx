@@ -15,7 +15,7 @@ import game.notes.Note;
 
 import game.stages.HellishFields;
 
-import menus.TitleState;
+import menus.TitleScreen;
 
 class Level1 extends GameState
 {
@@ -118,7 +118,7 @@ class Level1 extends GameState
 
     override function endSong():Void
     {
-        FlxG.switchState(() -> new TitleState());
+        FlxG.switchState(() -> new TitleScreen());
     }
 
     override function opponentNoteHit(note:Note):Void

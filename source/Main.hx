@@ -10,6 +10,6 @@ class Main extends Sprite
 	{
 		super();
 
-		addChild(new FlxGame(0, 0, () -> new OpeningState(() -> new #if debug game.levels.Level1 #else menus.TitleState #end ()), 60, 60, false, false));
+		addChild(new FlxGame(0, 0, () -> new OpeningState(() -> new #if debug game.levels.Level1 #else menus.TitleScreen #end ()), 60, 60, false, false));
 	}
 }
