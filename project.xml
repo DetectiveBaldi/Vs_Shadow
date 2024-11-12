@@ -32,6 +32,16 @@
 
 	<source path="source" />
 
+	<!-- ______________________________ Defines _____________________________ -->
+
+	<haxedef name="FLX_NO_DEBUG" unless="debug" />
+
+	<haxedef name="FLX_NO_FOCUS_LOST_SCREEN" />
+
+	<haxedef name="FLX_NO_HEALTH" />
+
+	<define name="VIDEOS_ENABLED" if="cpp windows" />
+
 	<!-- _______________________________ Libraries ______________________________ -->
 
 	<haxelib name="flixel" />
@@ -44,11 +54,5 @@
 
 	<haxelib name="haxeui-flixel" />
 
-	<!-- ______________________________ Defines _____________________________ -->
-
-	<haxedef name="FLX_NO_DEBUG" unless="debug" />
-
-	<haxedef name="FLX_NO_FOCUS_LOST_SCREEN" />
-
-	<haxedef name="FLX_NO_HEALTH" />
+	<haxelib name="hxvlc" if="VIDEOS_ENABLED" />
 </project>

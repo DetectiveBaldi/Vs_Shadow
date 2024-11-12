@@ -61,6 +61,10 @@ class OpeningState extends FlxState
 
         FocusManager.instance.autoFocus = false;
 
+        #if VIDEOS_ENABLED
+            hxvlc.util.Handle.init(["--no-lua"]);
+        #end
+
         AssetMan.init();
 
         Options.init();

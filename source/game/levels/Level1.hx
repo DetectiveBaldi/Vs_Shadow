@@ -1,7 +1,5 @@
 package game.levels;
 
-import haxe.Json;
-
 import openfl.filters.ColorMatrixFilter;
 
 import flixel.FlxG;
@@ -44,6 +42,10 @@ class Level1 extends GameState
 
         player.setPosition(3812.0, 645.0);
 
+        #if (VIDEOS_ENABLED)
+            countdown.pause();
+        #end
+
         var _opponent:Character = new Character(conductor, 0.0, 0.0, Character.findConfig("assets/data/game/Character/SHADOW_THIRD"), ARTIFICIAL);
 
         _opponent.setPosition(2658.0, 375.0);
@@ -51,6 +53,25 @@ class Level1 extends GameState
         opponentMap[_opponent.config.name] = _opponent;
 
         opponentGroup.add(_opponent);
+
+        #if VIDEOS_ENABLED
+            var introCutscene:hxvlc.flixel.FlxVideoSprite = new hxvlc.flixel.FlxVideoSprite();
+
+            introCutscene.camera = hudCamera;
+
+            introCutscene.load(Paths.mp4("assets/videos/game/levels/Level1/introCutscene"));
+
+            introCutscene.bitmap.onEndReached.add(() -> 
+            {
+                remove(introCutscene, true).destroy();
+
+                countdown.resume();
+            }, true);
+
+            introCutscene.play();
+
+            add(introCutscene);
+        #end
     }
 
     override function stepHit(step:Int):Void
