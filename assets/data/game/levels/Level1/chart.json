@@ -1,394 +1,7 @@
 {
-	"events": [
-		{
-			"name": "Camera Follow",
-			"time": 1276.596,
-			"value": {
-				"character": "SHADOW_THIRD",
-				"characterMap": "opponentMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 6382.97872340426,
-			"value": {
-				"character": "BOYFRIEND",
-				"characterMap": "playerMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 11489.3617021277,
-			"value": {
-				"character": "SHADOW_THIRD",
-				"characterMap": "opponentMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 16595.7446808511,
-			"value": {
-				"character": "BOYFRIEND",
-				"characterMap": "playerMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 21702.1276595745,
-			"value": {
-				"x": 3440,
-				"y": 675,
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 22978.7234042553,
-			"value": {
-				"character": "SHADOW_THIRD",
-				"characterMap": "opponentMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 28085.1063829787,
-			"value": {
-				"character": "BOYFRIEND",
-				"characterMap": "playerMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 33191.4893617021,
-			"value": {
-				"character": "SHADOW_THIRD",
-				"characterMap": "opponentMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 38297.8723404255,
-			"value": {
-				"character": "BOYFRIEND",
-				"characterMap": "playerMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 43404.2553191489,
-			"value": {
-				"character": "SHADOW_THIRD",
-				"characterMap": "opponentMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 48510.6382978724,
-			"value": {
-				"character": "BOYFRIEND",
-				"characterMap": "playerMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 53617.0212765958,
-			"value": {
-				"character": "SHADOW_THIRD",
-				"characterMap": "opponentMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 58723.4042553192,
-			"value": {
-				"character": "BOYFRIEND",
-				"characterMap": "playerMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 63829.7872340426,
-			"value": {
-				"character": "SHADOW_THIRD",
-				"characterMap": "opponentMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 68936.170212766,
-			"value": {
-				"character": "BOYFRIEND",
-				"characterMap": "playerMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 74042.5531914894,
-			"value": {
-				"character": "SHADOW_THIRD",
-				"characterMap": "opponentMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 79148.9361702128,
-			"value": {
-				"character": "BOYFRIEND",
-				"characterMap": "playerMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 84255.3191489361,
-			"value": {
-				"character": "SHADOW_THIRD",
-				"characterMap": "opponentMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 89361.7021276595,
-			"value": {
-				"character": "BOYFRIEND",
-				"characterMap": "playerMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 94468.0851063829,
-			"value": {
-				"character": "SHADOW_THIRD",
-				"characterMap": "opponentMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 99574.4680851063,
-			"value": {
-				"character": "BOYFRIEND",
-				"characterMap": "playerMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 104680.85106383,
-			"value": {
-				"character": "SHADOW_THIRD",
-				"characterMap": "opponentMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 107234.042553191,
-			"value": {
-				"character": "GARRETT",
-				"characterMap": "opponentMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 111849.427168576,
-			"value": {
-				"character": "BOYFRIEND",
-				"characterMap": "playerMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 116464.811783961,
-			"value": {
-				"character": "GARRETT",
-				"characterMap": "opponentMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 121080.196399345,
-			"value": {
-				"character": "BOYFRIEND",
-				"characterMap": "playerMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 125695.58101473,
-			"value": {
-				"character": "GARRETT",
-				"characterMap": "opponentMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 130310.965630115,
-			"value": {
-				"character": "BOYFRIEND",
-				"characterMap": "playerMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 134926.350245499,
-			"value": {
-				"character": "GARRETT",
-				"characterMap": "opponentMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 139541.734860884,
-			"value": {
-				"character": "BOYFRIEND",
-				"characterMap": "playerMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 144157.119476268,
-			"value": {
-				"character": "GARRETT",
-				"characterMap": "opponentMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 148772.504091653,
-			"value": {
-				"character": "BOYFRIEND",
-				"characterMap": "playerMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 153387.888707038,
-			"value": {
-				"character": "GARRETT",
-				"characterMap": "opponentMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 158003.273322422,
-			"value": {
-				"character": "BOYFRIEND",
-				"characterMap": "playerMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 162618.657937807,
-			"value": {
-				"character": "GARRETT",
-				"characterMap": "opponentMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 167234.042553191,
-			"value": {
-				"character": "BOYFRIEND",
-				"characterMap": "playerMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 171849.427168576,
-			"value": {
-				"character": "GARRETT",
-				"characterMap": "opponentMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 176464.811783961,
-			"value": {
-				"character": "BOYFRIEND",
-				"characterMap": "playerMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 181080.196399345,
-			"value": {
-				"x": 3200.5,
-				"y": 650,
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 185695.58101473,
-			"value": {
-				"character": "BOYFRIEND",
-				"characterMap": "playerMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 190310.965630115,
-			"value": {
-				"x": 3200.5,
-				"y": 650,
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 194926.350245499,
-			"value": {
-				"character": "BOYFRIEND",
-				"characterMap": "playerMap",
-				"duration": -1
-			}
-		},
-		{
-			"name": "Camera Follow",
-			"time": 199541.734860884,
-			"value": {
-				"x": 3440,
-				"y": 675,
-				"duration": -1
-			}
-		}
-	],
 	"name": "Angry",
+	"tempo": 188,
+	"speed": 3.3,
 	"notes": [
 		{
 			"speed": 1,
@@ -1526,7 +1139,7 @@
 		},
 		{
 			"speed": 1,
-			"length": 39.8936170212766,
+			"length": 79.7872340425532,
 			"lane": 0,
 			"time": 15638.2978723404,
 			"direction": 3
@@ -1897,7 +1510,7 @@
 		},
 		{
 			"speed": 1,
-			"length": 39.8936170212766,
+			"length": 79.7872340425532,
 			"lane": 1,
 			"time": 20744.6808510638,
 			"direction": 3
@@ -2262,14 +1875,14 @@
 		{
 			"speed": 1,
 			"length": 79.7872340425532,
-			"lane": 1,
+			"lane": 0,
 			"time": 25531.914893617,
 			"direction": 1
 		},
 		{
 			"speed": 1,
 			"length": 79.7872340425532,
-			"lane": 0,
+			"lane": 1,
 			"time": 25531.914893617,
 			"direction": 1
 		},
@@ -2732,7 +2345,7 @@
 			"speed": 1,
 			"length": 0,
 			"lane": 1,
-			"time": 30079.7872340426,
+			"time": 30079.7872340425,
 			"direction": 2
 		},
 		{
@@ -2851,7 +2464,7 @@
 			"speed": 1,
 			"length": 0,
 			"lane": 1,
-			"time": 31436.170212766,
+			"time": 31436.1702127659,
 			"direction": 3
 		},
 		{
@@ -7100,14 +6713,14 @@
 			"speed": 1,
 			"length": 0,
 			"lane": 0,
-			"time": 84255.3191489362,
+			"time": 84255.3191489361,
 			"direction": 3
 		},
 		{
 			"speed": 1,
 			"length": 79.7872340425532,
 			"lane": 1,
-			"time": 84255.3191489362,
+			"time": 84255.3191489361,
 			"direction": 1
 		},
 		{
@@ -7121,7 +6734,7 @@
 			"speed": 1,
 			"length": 0,
 			"lane": 0,
-			"time": 84414.8936170213,
+			"time": 84414.8936170212,
 			"direction": 1
 		},
 		{
@@ -7135,14 +6748,14 @@
 			"speed": 1,
 			"length": 0,
 			"lane": 0,
-			"time": 84574.4680851064,
+			"time": 84574.4680851063,
 			"direction": 3
 		},
 		{
 			"speed": 1,
 			"length": 0,
 			"lane": 1,
-			"time": 84574.4680851064,
+			"time": 84574.4680851063,
 			"direction": 3
 		},
 		{
@@ -7156,14 +6769,14 @@
 			"speed": 1,
 			"length": 0,
 			"lane": 0,
-			"time": 84734.0425531915,
+			"time": 84734.0425531914,
 			"direction": 3
 		},
 		{
 			"speed": 1,
 			"length": 0,
 			"lane": 1,
-			"time": 84734.0425531915,
+			"time": 84734.0425531914,
 			"direction": 1
 		},
 		{
@@ -7177,42 +6790,42 @@
 			"speed": 1,
 			"length": 0,
 			"lane": 0,
-			"time": 84893.6170212766,
+			"time": 84893.6170212765,
 			"direction": 2
 		},
 		{
 			"speed": 1,
 			"length": 0,
 			"lane": 1,
-			"time": 84893.6170212766,
+			"time": 84893.6170212765,
 			"direction": 0
 		},
 		{
 			"speed": 1,
 			"length": 0,
 			"lane": 0,
-			"time": 84973.4042553192,
+			"time": 84973.4042553191,
 			"direction": 3
 		},
 		{
 			"speed": 1,
 			"length": 0,
 			"lane": 0,
-			"time": 85053.1914893617,
+			"time": 85053.1914893616,
 			"direction": 0
 		},
 		{
 			"speed": 1,
 			"length": 0,
 			"lane": 1,
-			"time": 85053.1914893617,
+			"time": 85053.1914893616,
 			"direction": 1
 		},
 		{
 			"speed": 1,
 			"length": 0,
 			"lane": 0,
-			"time": 85132.9787234043,
+			"time": 85132.9787234042,
 			"direction": 1
 		},
 		{
@@ -7233,7 +6846,7 @@
 			"speed": 1,
 			"length": 0,
 			"lane": 0,
-			"time": 85292.5531914894,
+			"time": 85292.5531914893,
 			"direction": 2
 		},
 		{
@@ -7400,14 +7013,14 @@
 		{
 			"speed": 1,
 			"length": 79.7872340425532,
-			"lane": 1,
+			"lane": 0,
 			"time": 86808.5106382978,
 			"direction": 1
 		},
 		{
 			"speed": 1,
 			"length": 79.7872340425532,
-			"lane": 0,
+			"lane": 1,
 			"time": 86808.5106382978,
 			"direction": 1
 		},
@@ -7520,7 +7133,7 @@
 			"speed": 1,
 			"length": 0,
 			"lane": 0,
-			"time": 88164.8936170213,
+			"time": 88164.8936170212,
 			"direction": 1
 		},
 		{
@@ -7534,7 +7147,7 @@
 			"speed": 1,
 			"length": 0,
 			"lane": 0,
-			"time": 88324.4680851064,
+			"time": 88324.4680851063,
 			"direction": 2
 		},
 		{
@@ -7555,7 +7168,7 @@
 			"speed": 1,
 			"length": 0,
 			"lane": 0,
-			"time": 88484.0425531915,
+			"time": 88484.0425531914,
 			"direction": 3
 		},
 		{
@@ -7569,35 +7182,35 @@
 			"speed": 1,
 			"length": 0,
 			"lane": 0,
-			"time": 88643.6170212766,
+			"time": 88643.6170212765,
 			"direction": 0
 		},
 		{
 			"speed": 1,
 			"length": 0,
 			"lane": 0,
-			"time": 88723.4042553192,
+			"time": 88723.4042553191,
 			"direction": 1
 		},
 		{
 			"speed": 1,
 			"length": 79.7872340425532,
 			"lane": 1,
-			"time": 88723.4042553192,
+			"time": 88723.4042553191,
 			"direction": 1
 		},
 		{
 			"speed": 1,
 			"length": 0,
 			"lane": 0,
-			"time": 88803.1914893617,
+			"time": 88803.1914893616,
 			"direction": 1
 		},
 		{
 			"speed": 1,
 			"length": 0,
 			"lane": 0,
-			"time": 88882.9787234043,
+			"time": 88882.9787234042,
 			"direction": 3
 		},
 		{
@@ -7611,35 +7224,35 @@
 			"speed": 1,
 			"length": 79.7872340425532,
 			"lane": 0,
-			"time": 89042.5531914894,
+			"time": 89042.5531914893,
 			"direction": 0
 		},
 		{
 			"speed": 1,
 			"length": 79.7872340425532,
 			"lane": 1,
-			"time": 89042.5531914894,
+			"time": 89042.5531914893,
 			"direction": 3
 		},
 		{
 			"speed": 1,
 			"length": 79.7872340425532,
 			"lane": 0,
-			"time": 89202.1276595745,
+			"time": 89202.1276595744,
 			"direction": 3
 		},
 		{
 			"speed": 1,
 			"length": 0,
 			"lane": 1,
-			"time": 89361.7021276596,
+			"time": 89361.7021276595,
 			"direction": 3
 		},
 		{
 			"speed": 1,
 			"length": 79.7872340425532,
 			"lane": 0,
-			"time": 89361.7021276596,
+			"time": 89361.7021276595,
 			"direction": 1
 		},
 		{
@@ -7653,7 +7266,7 @@
 			"speed": 1,
 			"length": 0,
 			"lane": 1,
-			"time": 89521.2765957447,
+			"time": 89521.2765957446,
 			"direction": 1
 		},
 		{
@@ -7667,14 +7280,14 @@
 			"speed": 1,
 			"length": 0,
 			"lane": 1,
-			"time": 89680.8510638298,
+			"time": 89680.8510638297,
 			"direction": 3
 		},
 		{
 			"speed": 1,
 			"length": 0,
 			"lane": 0,
-			"time": 89680.8510638298,
+			"time": 89680.8510638297,
 			"direction": 3
 		},
 		{
@@ -7688,14 +7301,14 @@
 			"speed": 1,
 			"length": 0,
 			"lane": 1,
-			"time": 89840.4255319149,
+			"time": 89840.4255319148,
 			"direction": 3
 		},
 		{
 			"speed": 1,
 			"length": 0,
 			"lane": 0,
-			"time": 89840.4255319149,
+			"time": 89840.4255319148,
 			"direction": 1
 		},
 		{
@@ -7709,26 +7322,33 @@
 			"speed": 1,
 			"length": 0,
 			"lane": 1,
-			"time": 90000,
+			"time": 89999.9999999999,
 			"direction": 2
 		},
 		{
 			"speed": 1,
 			"length": 0,
 			"lane": 0,
-			"time": 90000,
+			"time": 89999.9999999999,
 			"direction": 0
 		},
 		{
 			"speed": 1,
 			"length": 0,
 			"lane": 1,
-			"time": 90079.7872340426,
+			"time": 90079.7872340425,
 			"direction": 3
 		},
 		{
 			"speed": 1,
 			"length": 0,
+			"lane": 0,
+			"time": 90159.574468085,
+			"direction": 1
+		},
+		{
+			"speed": 1,
+			"length": 0,
 			"lane": 1,
 			"time": 90159.5744680851,
 			"direction": 0
@@ -7736,15 +7356,8 @@
 		{
 			"speed": 1,
 			"length": 0,
-			"lane": 0,
-			"time": 90159.5744680851,
-			"direction": 1
-		},
-		{
-			"speed": 1,
-			"length": 0,
 			"lane": 1,
-			"time": 90239.3617021277,
+			"time": 90239.3617021276,
 			"direction": 1
 		},
 		{
@@ -7765,7 +7378,7 @@
 			"speed": 1,
 			"length": 0,
 			"lane": 1,
-			"time": 90398.9361702128,
+			"time": 90398.9361702127,
 			"direction": 2
 		},
 		{
@@ -7870,7 +7483,7 @@
 			"speed": 1,
 			"length": 0,
 			"lane": 1,
-			"time": 91356.3829787234,
+			"time": 91356.3829787233,
 			"direction": 2
 		},
 		{
@@ -7989,7 +7602,7 @@
 			"speed": 1,
 			"length": 0,
 			"lane": 1,
-			"time": 92712.7659574468,
+			"time": 92712.7659574467,
 			"direction": 3
 		},
 		{
@@ -8052,7 +7665,7 @@
 			"speed": 1,
 			"length": 0,
 			"lane": 1,
-			"time": 93271.2765957447,
+			"time": 93271.2765957446,
 			"direction": 1
 		},
 		{
@@ -8066,7 +7679,7 @@
 			"speed": 1,
 			"length": 0,
 			"lane": 1,
-			"time": 93430.8510638298,
+			"time": 93430.8510638297,
 			"direction": 2
 		},
 		{
@@ -8087,7 +7700,7 @@
 			"speed": 1,
 			"length": 0,
 			"lane": 1,
-			"time": 93590.4255319149,
+			"time": 93590.4255319148,
 			"direction": 3
 		},
 		{
@@ -8101,21 +7714,21 @@
 			"speed": 1,
 			"length": 0,
 			"lane": 1,
-			"time": 93750,
+			"time": 93749.9999999999,
 			"direction": 0
+		},
+		{
+			"speed": 1,
+			"length": 0,
+			"lane": 1,
+			"time": 93829.7872340425,
+			"direction": 1
 		},
 		{
 			"speed": 1,
 			"length": 79.7872340425532,
 			"lane": 0,
 			"time": 93829.7872340425,
-			"direction": 1
-		},
-		{
-			"speed": 1,
-			"length": 0,
-			"lane": 1,
-			"time": 93829.7872340426,
 			"direction": 1
 		},
 		{
@@ -8129,7 +7742,7 @@
 			"speed": 1,
 			"length": 0,
 			"lane": 1,
-			"time": 93989.3617021277,
+			"time": 93989.3617021276,
 			"direction": 3
 		},
 		{
@@ -8142,6 +7755,13 @@
 		{
 			"speed": 1,
 			"length": 79.7872340425532,
+			"lane": 1,
+			"time": 94148.9361702127,
+			"direction": 0
+		},
+		{
+			"speed": 1,
+			"length": 79.7872340425532,
 			"lane": 0,
 			"time": 94148.9361702127,
 			"direction": 3
@@ -8150,14 +7770,7 @@
 			"speed": 1,
 			"length": 79.7872340425532,
 			"lane": 1,
-			"time": 94148.9361702128,
-			"direction": 0
-		},
-		{
-			"speed": 1,
-			"length": 79.7872340425532,
-			"lane": 1,
-			"time": 94308.5106382979,
+			"time": 94308.5106382978,
 			"direction": 3
 		},
 		{
@@ -16940,7 +16553,7 @@
 		},
 		{
 			"speed": 1,
-			"length": 0,
+			"length": 72.1153846153846,
 			"lane": 0,
 			"time": 195791.734860884,
 			"direction": 0
@@ -16954,7 +16567,7 @@
 		},
 		{
 			"speed": 1,
-			"length": 0,
+			"length": 72.1153846153846,
 			"lane": 0,
 			"time": 195935.965630115,
 			"direction": 2
@@ -17108,7 +16721,7 @@
 		},
 		{
 			"speed": 1,
-			"length": 504.807692307692,
+			"length": 216.346153846154,
 			"lane": 0,
 			"time": 197234.042553192,
 			"direction": 0
@@ -17234,7 +16847,7 @@
 		},
 		{
 			"speed": 1,
-			"length": 0,
+			"length": 72.1153846153846,
 			"lane": 0,
 			"time": 198387.888707038,
 			"direction": 2
@@ -17262,7 +16875,7 @@
 		},
 		{
 			"speed": 1,
-			"length": 0,
+			"length": 72.1153846153846,
 			"lane": 0,
 			"time": 198532.119476268,
 			"direction": 1
@@ -17283,7 +16896,7 @@
 		},
 		{
 			"speed": 1,
-			"length": 0,
+			"length": 72.1153846153846,
 			"lane": 0,
 			"time": 198676.350245499,
 			"direction": 3
@@ -17304,7 +16917,7 @@
 		},
 		{
 			"speed": 1,
-			"length": 0,
+			"length": 72.1153846153846,
 			"lane": 0,
 			"time": 198820.58101473,
 			"direction": 2
@@ -17318,7 +16931,7 @@
 		},
 		{
 			"speed": 1,
-			"length": 0,
+			"length": 72.1153846153846,
 			"lane": 0,
 			"time": 198964.811783961,
 			"direction": 0
@@ -17339,7 +16952,7 @@
 		},
 		{
 			"speed": 1,
-			"length": 0,
+			"length": 72.1153846153846,
 			"lane": 0,
 			"time": 199109.042553192,
 			"direction": 2
@@ -17367,7 +16980,7 @@
 		},
 		{
 			"speed": 1,
-			"length": 0,
+			"length": 72.1153846153846,
 			"lane": 0,
 			"time": 199253.273322422,
 			"direction": 3
@@ -17388,7 +17001,7 @@
 		},
 		{
 			"speed": 1,
-			"length": 0,
+			"length": 72.1153846153846,
 			"lane": 0,
 			"time": 199397.504091653,
 			"direction": 1
@@ -17436,12 +17049,348 @@
 			"direction": 1
 		}
 	],
-	"speed": 3.3,
-	"tempo": 188,
+	"events": [
+		{
+			"name": "Camera Follow",
+			"time": 1276.59574468085,
+			"value": {
+				"character": "SHADOW_THIRD",
+				"characterMap": "opponentMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 6382.97872340426,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 11489.3617021277,
+			"value": {
+				"character": "SHADOW_THIRD",
+				"characterMap": "opponentMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 16595.7446808511,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 21702.1276595745,
+			"value": {
+				"x": 3440,
+				"y": 675
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 22978.7234042553,
+			"value": {
+				"character": "SHADOW_THIRD",
+				"characterMap": "opponentMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 28085.1063829787,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 33191.4893617021,
+			"value": {
+				"character": "SHADOW_THIRD",
+				"characterMap": "opponentMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 38297.8723404255,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 43404.2553191489,
+			"value": {
+				"character": "SHADOW_THIRD",
+				"characterMap": "opponentMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 48510.6382978724,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 53617.0212765958,
+			"value": {
+				"character": "SHADOW_THIRD",
+				"characterMap": "opponentMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 58723.4042553192,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 63829.7872340426,
+			"value": {
+				"character": "SHADOW_THIRD",
+				"characterMap": "opponentMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 68936.170212766,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 74042.5531914894,
+			"value": {
+				"character": "SHADOW_THIRD",
+				"characterMap": "opponentMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 79148.9361702128,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 84255.3191489361,
+			"value": {
+				"character": "SHADOW_THIRD",
+				"characterMap": "opponentMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 89361.7021276595,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 94468.0851063829,
+			"value": {
+				"character": "SHADOW_THIRD",
+				"characterMap": "opponentMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 99574.4680851063,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 104680.85106383,
+			"value": {
+				"character": "SHADOW_THIRD",
+				"characterMap": "opponentMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 107234.042553191,
+			"value": {
+				"character": "GARRETT",
+				"characterMap": "opponentMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 111849.427168576,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 116464.811783961,
+			"value": {
+				"character": "GARRETT",
+				"characterMap": "opponentMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 121080.196399345,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 125695.58101473,
+			"value": {
+				"character": "GARRETT",
+				"characterMap": "opponentMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 130310.965630115,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 134926.350245499,
+			"value": {
+				"character": "GARRETT",
+				"characterMap": "opponentMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 139541.734860884,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 144157.119476268,
+			"value": {
+				"character": "GARRETT",
+				"characterMap": "opponentMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 148772.504091653,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 153387.888707038,
+			"value": {
+				"character": "GARRETT",
+				"characterMap": "opponentMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 158003.273322422,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 162618.657937807,
+			"value": {
+				"character": "GARRETT",
+				"characterMap": "opponentMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 167234.042553191,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 171849.427168576,
+			"value": {
+				"character": "GARRETT",
+				"characterMap": "opponentMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 176464.811783961,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 181080.196399345,
+			"value": {
+				"x": 3200.5,
+				"y": 650
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 185695.58101473,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap"
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 190310.965630115,
+			"value": {
+				"x": 3200.5,
+				"y": 650
+			}
+		},
+		{
+			"name": "Camera Follow",
+			"time": 194926.350245499,
+			"value": {
+				"character": "BOYFRIEND",
+				"characterMap": "playerMap"
+			}
+		}
+	],
 	"timeChanges": [
 		{
 			"step": 0,
-			"time": 107203,
+			"time": 107234,
 			"tempo": 208
 		}
 	]

@@ -32,7 +32,7 @@ class Paths
         return '${path}.ttf';
     }
 
-    #if (VIDEOS_ENABLED)
+    #if VIDEOS_ENABLED
         public static function mp4(path:String):String
         {
             return '${path}.mp4';

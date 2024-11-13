@@ -17,6 +17,10 @@ import menus.TitleScreen;
 
 class Level1 extends GameState
 {
+    #if VIDEOS_ENABLED
+        public var introCutscene:hxvlc.flixel.FlxVideoSprite;
+    #end
+
     public function new():Void
     {
         super(new HellishFields());
@@ -40,24 +44,26 @@ class Level1 extends GameState
 
         opponent.visible = false;
 
-        player.setPosition(3812.0, 645.0);
+        player.setPosition(gameCamera.viewRight - player.width - 144.0, 645.0);
 
-        #if (VIDEOS_ENABLED)
+        #if VIDEOS_ENABLED
             countdown.pause();
         #end
 
         var _opponent:Character = new Character(conductor, 0.0, 0.0, Character.findConfig("assets/data/game/Character/SHADOW_THIRD"), ARTIFICIAL);
 
-        _opponent.setPosition(2658.0, 375.0);
+        _opponent.setPosition(gameCamera.viewX + 144.0, 375.0);
 
         opponentMap[_opponent.config.name] = _opponent;
 
         opponentGroup.add(_opponent);
 
         #if VIDEOS_ENABLED
-            var introCutscene:hxvlc.flixel.FlxVideoSprite = new hxvlc.flixel.FlxVideoSprite();
+            introCutscene = new hxvlc.flixel.FlxVideoSprite();
 
             introCutscene.camera = hudCamera;
+
+            introCutscene.antialiasing = true;
 
             introCutscene.load(Paths.mp4("assets/videos/game/levels/Level1/introCutscene"));
 
@@ -68,11 +74,28 @@ class Level1 extends GameState
                 countdown.resume();
             }, true);
 
+            introCutscene.bitmap.onStopped.add(() ->
+            {
+                remove(introCutscene, true).destroy();
+
+                countdown.resume();
+            });
+
             introCutscene.play();
 
             add(introCutscene);
         #end
     }
+
+    #if VIDEOS_ENABLED
+        override function update(elapsed:Float):Void
+        {
+            super.update(elapsed);
+
+            if ((FlxG.keys.justPressed.ENTER || FlxG.keys.justPressed.SPACE) && countdown.paused)
+                introCutscene.stop();
+        }
+    #end
 
     override function stepHit(step:Int):Void
     {
@@ -106,7 +129,7 @@ class Level1 extends GameState
 
             var _opponent:Character = new Character(conductor, 0.0, 0.0, Character.findConfig("assets/data/game/Character/GARRETT"), ARTIFICIAL);
 
-            _opponent.setPosition(2758.0, 320.0);
+            _opponent.setPosition(opponentMap["SHADOW_THIRD"].x + 144.0, 320.0);
     
             opponentMap[_opponent.config.name] = _opponent;
     
@@ -147,6 +170,7 @@ class Level1 extends GameState
         super.opponentNoteHit(note);
 
         if (conductor.step >= 2366.0)
-            healthBar.value -= 1.65;
+            if (healthBar.value - 1.65 > 25.0)
+                healthBar.value -= 1.65;
     }
 }

@@ -32,7 +32,11 @@
 
 	<source path="source" />
 
-	<!-- ______________________________ Defines _____________________________ -->
+	<!-- ______________________________ Defines, Haxedefs, and Libraries _____________________________ -->
+
+	<haxelib name="haxeui-core" />
+
+	<haxelib name="flixel" />
 
 	<haxedef name="FLX_NO_DEBUG" unless="debug" />
 
@@ -40,19 +44,15 @@
 
 	<haxedef name="FLX_NO_HEALTH" />
 
-	<define name="VIDEOS_ENABLED" if="cpp windows" />
-
-	<!-- _______________________________ Libraries ______________________________ -->
-
-	<haxelib name="flixel" />
-
 	<haxelib name="flixel-addons" />
 
 	<haxelib name="flixel-text-input" />
 
-	<haxelib name="haxeui-core" />
-
 	<haxelib name="haxeui-flixel" />
 
+	<define name="VIDEOS_ENABLED" if="cpp windows" />
+
 	<haxelib name="hxvlc" if="VIDEOS_ENABLED" />
+
+	<haxedef name="HXVLC_NO_SHARE_DIRECTORY" if="VIDEOS_ENABLED" />
 </project>
