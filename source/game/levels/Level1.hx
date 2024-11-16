@@ -18,7 +18,7 @@ import menus.TitleScreen;
 class Level1 extends GameState
 {
     #if VIDEOS_ENABLED
-        public var introCutscene:hxvlc.flixel.FlxVideoSprite;
+        public var introCutscene:hxvlc.flixel.FlxVideo;
     #end
 
     public function new():Void
@@ -31,6 +31,10 @@ class Level1 extends GameState
         super.create();
 
         AssetMan.graphic(Paths.png("assets/images/game/Character/GARRETT"));
+
+        #if VIDEOS_ENABLED
+            gameCamera.visible = false;
+        #end
 
         gameCamera.zoom = 0.75;
 
@@ -59,31 +63,23 @@ class Level1 extends GameState
         opponentGroup.add(_opponent);
 
         #if VIDEOS_ENABLED
-            introCutscene = new hxvlc.flixel.FlxVideoSprite();
-
-            introCutscene.camera = hudCamera;
-
-            introCutscene.antialiasing = true;
+            introCutscene = new hxvlc.flixel.FlxVideo();
 
             introCutscene.load(Paths.mp4("assets/videos/game/levels/Level1/introCutscene"));
 
-            introCutscene.bitmap.onEndReached.add(() -> 
+            introCutscene.onEndReached.add(() -> 
             {
-                remove(introCutscene, true).destroy();
+                FlxG.game.removeChild(introCutscene);
 
                 countdown.resume();
+
+                introCutscene.dispose();
             }, true);
-
-            introCutscene.bitmap.onStopped.add(() ->
-            {
-                remove(introCutscene, true).destroy();
-
-                countdown.resume();
-            });
 
             introCutscene.play();
 
-            add(introCutscene);
+            @:privateAccess
+                FlxG.game.addChildAt(introCutscene, FlxG.game.getChildIndex(FlxG.game._inputContainer) + 1);
         #end
     }
 
@@ -92,14 +88,49 @@ class Level1 extends GameState
         {
             super.update(elapsed);
 
-            if ((FlxG.keys.justPressed.ENTER || FlxG.keys.justPressed.SPACE) && countdown.paused)
-                introCutscene.stop();
+            if ((FlxG.keys.justPressed.ENTER || FlxG.keys.justPressed.SPACE) && countdown.tick <= 0.0)
+                introCutscene.onEndReached.dispatch();
+        }
+
+        override function destroy():Void
+        {
+            super.destroy();
+
+            FlxG.game.removeChild(introCutscene);
+
+            introCutscene.dispose();
+        }
+
+        override function openSubState(subState:flixel.FlxSubState):Void
+        {
+            super.openSubState(subState);
+
+            if (Type.getClass(subState) == GameOverScreen)
+            {
+                FlxG.game.removeChild(introCutscene);
+
+                gameCamera.visible = true;
+
+                hudCamera.stopFade();
+
+                introCutscene.dispose();
+            }
         }
     #end
 
     override function stepHit(step:Int):Void
     {
         super.stepHit(step);
+
+        if (step == 8.0)
+            hudCamera.fade(FlxColor.WHITE, conductor.crotchet * 0.001 * 2.0);
+
+        if (step == 16.0)
+        {
+            gameCamera.visible = true;
+
+            hudCamera.stopFade();
+        }
 
         if (step == 1312.0)
         {

@@ -34,8 +34,6 @@
 
 	<!-- ______________________________ Defines, Haxedefs, and Libraries _____________________________ -->
 
-	<haxelib name="haxeui-core" />
-
 	<haxelib name="flixel" />
 
 	<haxedef name="FLX_NO_DEBUG" unless="debug" />
@@ -55,4 +53,6 @@
 	<haxelib name="hxvlc" if="VIDEOS_ENABLED" />
 
 	<haxedef name="HXVLC_NO_SHARE_DIRECTORY" if="VIDEOS_ENABLED" />
+
+	<haxelib name="haxeui-core" />
 </project>
