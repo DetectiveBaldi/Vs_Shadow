@@ -54,7 +54,7 @@ class Level1 extends GameState
             countdown.pause();
         #end
 
-        var _opponent:Character = new Character(conductor, 0.0, 0.0, Character.findConfig("assets/data/game/Character/SHADOW_THIRD"), ARTIFICIAL);
+        var _opponent:Character = new Character(conductor, 0.0, 0.0, Character.findConfig("assets/data/game/Character/SHADOW_THIRD"), OTHER);
 
         _opponent.setPosition(gameCamera.viewX + 144.0, 375.0);
 
@@ -158,7 +158,7 @@ class Level1 extends GameState
 
             opponentMap["SHADOW_THIRD"].animation.finish();
 
-            var _opponent:Character = new Character(conductor, 0.0, 0.0, Character.findConfig("assets/data/game/Character/GARRETT"), ARTIFICIAL);
+            var _opponent:Character = new Character(conductor, 0.0, 0.0, Character.findConfig("assets/data/game/Character/GARRETT"), OTHER);
 
             _opponent.setPosition(opponentMap["SHADOW_THIRD"].x + 144.0, 320.0);
     
