@@ -22,16 +22,6 @@
 
 	<window if="desktop" orientation="landscape" fullscreen="false" resizable="true" />
 
-	<!-- _____________________________ Path Settings ____________________________ -->
-
-	<set name="BUILD_DIR" value="bin/debug" if="debug" />
-
-	<set name="BUILD_DIR" value="bin/stable" unless="debug" />
-
-	<assets path="assets" />
-
-	<source path="source" />
-
 	<!-- ______________________________ Defines, Haxedefs, and Libraries _____________________________ -->
 
 	<haxelib name="flixel" />
@@ -55,4 +45,24 @@
 	<haxedef name="HXVLC_NO_SHARE_DIRECTORY" if="VIDEOS_ENABLED" />
 
 	<haxelib name="haxeui-core" />
+
+	<!-- _____________________________ Path Settings ____________________________ -->
+
+	<set name="BUILD_DIR" value="bin/debug" if="debug" />
+
+	<set name="BUILD_DIR" value="bin/stable" unless="debug" />
+
+	<assets path="assets/data" />
+
+	<assets path="assets/fonts" />
+
+	<assets path="assets/images" />
+
+	<assets path="assets/music" />
+
+	<assets path="assets/sounds" />
+
+	<assets path="assets/videos" if="VIDEOS_ENABLED" />
+
+	<source path="source" />
 </project>
