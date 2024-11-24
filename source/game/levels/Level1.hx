@@ -31,10 +31,8 @@ class Level1 extends GameState
         super.create();
 
         AssetMan.graphic(Paths.png("assets/images/game/Character/GARRETT"));
-
-        #if VIDEOS_ENABLED
-            gameCamera.visible = false;
-        #end
+        
+        gameCamera.visible = false;
 
         gameCamera.zoom = 0.75;
 
