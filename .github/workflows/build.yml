@@ -16,7 +16,8 @@ jobs:
           haxelib install hxcpp --quiet
           haxelib install lime --quiet
           haxelib install openfl --quiet
-          haxelib git flixel https://github.com/HaxeFlixel/flixel --quiet
+          haxelib git flixel https://github.com/HaxeFlixel/flixel --quiet --skip-dependencies
+          haxelib git hxvlc https://github.com/MAJigsaw77/hxvlc --quiet --skip-dependencies
           haxelib git flixel-addons https://github.com/HaxeFlixel/flixel-addons --quiet
           haxelib git flixel-text-input https://github.com/Starmapo/flixel-text-input --quiet
           haxelib git haxeui-flixel https://github.com/haxeui/haxeui-flixel --quiet --skip-dependencies
@@ -45,8 +46,8 @@ jobs:
           haxelib install hxcpp --quiet
           haxelib install lime --quiet
           haxelib install openfl --quiet
-          haxelib git flixel https://github.com/HaxeFlixel/flixel --quiet
-          haxelib install hxvlc --quiet --skip-dependencies
+          haxelib git flixel https://github.com/HaxeFlixel/flixel --quiet --skip-dependencies
+          haxelib git hxvlc https://github.com/MAJigsaw77/hxvlc --quiet --skip-dependencies
           haxelib git flixel-addons https://github.com/HaxeFlixel/flixel-addons --quiet
           haxelib git flixel-text-input https://github.com/Starmapo/flixel-text-input --quiet
           haxelib git haxeui-flixel https://github.com/haxeui/haxeui-flixel --quiet --skip-dependencies
