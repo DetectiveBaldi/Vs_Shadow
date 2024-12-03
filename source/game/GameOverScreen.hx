@@ -9,11 +9,9 @@ import flixel.util.FlxColor;
 import core.AssetMan;
 import core.Paths;
 
-import extendable.SteppingSubState;
+import music.MusicSubState;
 
-import menus.TitleScreen;
-
-class GameOverScreen extends SteppingSubState
+class GameOverScreen extends MusicSubState
 {
     public var game:GameState;
 
@@ -82,13 +80,6 @@ class GameOverScreen extends SteppingSubState
                 end.play();
 
                 tune.stop();
-            }
-
-            if (FlxG.keys.justPressed.ESCAPE)
-            {
-                FlxG.camera.fade(FlxColor.BLACK, conductor.crotchet * 0.001 * 2.5, false, () -> FlxG.switchState(() -> new TitleScreen()));
-    
-                tune.fadeOut(conductor.crotchet * 0.001 * 2.5, 0.0);
             }
         }
     }
