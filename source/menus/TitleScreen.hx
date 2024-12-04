@@ -15,11 +15,11 @@ import flixel.util.FlxColor;
 import core.AssetMan;
 import core.Paths;
 
-import extendable.SteppingState;
-
 import game.levels.Level1;
 
-class TitleScreen extends SteppingState
+import music.MusicState;
+
+class TitleScreen extends MusicState
 {
     public var sky:FlxSprite;
 
