@@ -12,7 +12,7 @@ import flixel.tweens.FlxTween;
 
 import flixel.util.FlxColor;
 
-import core.AssetMan;
+import core.Assets;
 import core.Paths;
 
 import game.levels.Level1;
@@ -47,7 +47,7 @@ class TitleScreen extends MusicState
 
         sky.antialiasing = true;
 
-        sky.frames = FlxAtlasFrames.fromSparrow(AssetMan.graphic(Paths.png("assets/images/menus/TitleScreen/sky")), Paths.xml("assets/images/menus/TitleScreen/sky"));
+        sky.frames = FlxAtlasFrames.fromSparrow(Assets.graphic(Paths.png("assets/images/menus/TitleScreen/sky")), Paths.xml("assets/images/menus/TitleScreen/sky"));
 
         sky.animation.addByPrefix("sky", "sky", 12.0, true);
 
@@ -57,7 +57,7 @@ class TitleScreen extends MusicState
 
         add(sky);
 
-        grass = new FlxSprite(0.0, 0.0, AssetMan.graphic(Paths.png("assets/images/menus/TitleScreen/grass")));
+        grass = new FlxSprite(0.0, 0.0, Assets.graphic(Paths.png("assets/images/menus/TitleScreen/grass")));
 
         grass.antialiasing = true;
 
@@ -73,7 +73,7 @@ class TitleScreen extends MusicState
 
         logo.antialiasing = true;
 
-        logo.frames = FlxAtlasFrames.fromSparrow(AssetMan.graphic(Paths.png("assets/images/menus/TitleScreen/logo")), Paths.xml("assets/images/menus/TitleScreen/logo"));
+        logo.frames = FlxAtlasFrames.fromSparrow(Assets.graphic(Paths.png("assets/images/menus/TitleScreen/logo")), Paths.xml("assets/images/menus/TitleScreen/logo"));
 
         logo.animation.addByPrefix("logo", "logo", 16.0, false);
 
@@ -93,7 +93,7 @@ class TitleScreen extends MusicState
 
         prompt.antialiasing = true;
 
-        prompt.frames = FlxAtlasFrames.fromSparrow(AssetMan.graphic(Paths.png("assets/images/menus/TitleScreen/prompt")), Paths.xml("assets/images/menus/TitleScreen/prompt"));
+        prompt.frames = FlxAtlasFrames.fromSparrow(Assets.graphic(Paths.png("assets/images/menus/TitleScreen/prompt")), Paths.xml("assets/images/menus/TitleScreen/prompt"));
 
         prompt.animation.addByPrefix("normal", "normal", 0.0);
 
@@ -107,7 +107,7 @@ class TitleScreen extends MusicState
 
         FlxTween.tween(prompt, {y: FlxG.height - prompt.height * 1.75}, 0.45, {ease: FlxEase.sineOut});
 
-        tune = FlxG.sound.load(AssetMan.sound(Paths.ogg('assets/music/menus/TitleScreen/tune')), 1.0, true);
+        tune = FlxG.sound.load(Assets.sound(Paths.ogg('assets/music/menus/TitleScreen/tune')), 1.0, true);
 
         tune.fadeIn(conductor.crotchet * 0.001, 0.0, 1.0);
 
@@ -128,7 +128,7 @@ class TitleScreen extends MusicState
 
             FlxTween.flicker(prompt, conductor.crotchet * 0.01, 0.08, {ease: FlxEase.sineOut});
 
-            confirm = FlxG.sound.load(AssetMan.sound(Paths.ogg('assets/sounds/menus/TitleScreen/confirm'), false));
+            confirm = FlxG.sound.load(Assets.sound(Paths.ogg('assets/sounds/menus/TitleScreen/confirm'), false));
 
             confirm.play();
         }

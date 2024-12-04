@@ -6,7 +6,7 @@ import flixel.FlxG;
 
 import flixel.util.FlxColor;
 
-import core.AssetMan;
+import core.Assets;
 import core.Paths;
 
 import game.notes.Note;
@@ -30,7 +30,7 @@ class Level1 extends GameState
     {
         super.create();
 
-        AssetMan.graphic(Paths.png("assets/images/game/Character/GARRETT"));
+        Assets.graphic(Paths.png("assets/images/game/Character/GARRETT"));
         
         gameCamera.visible = false;
 
