@@ -17,7 +17,7 @@ class HellishFields extends Stage
     {
         super();
 
-        background = new FlxSprite(0.0, 0.0, Assets.graphic(Paths.png("assets/images/game/stages/HellishFields/background")));
+        background = new FlxSprite(0.0, 0.0, Assets.getGraphic(Paths.png("assets/images/game/stages/HellishFields/background")));
 
         background.antialiasing = true;
 
@@ -31,7 +31,7 @@ class HellishFields extends Stage
 
         tree.antialiasing = true;
 
-        tree.frames = FlxAtlasFrames.fromSparrow(Assets.graphic(Paths.png("assets/images/game/stages/HellishFields/tree")), Paths.xml("assets/images/game/stages/HellishFields/tree"));
+        tree.frames = FlxAtlasFrames.fromSparrow(Assets.getGraphic(Paths.png("assets/images/game/stages/HellishFields/tree")), Paths.xml("assets/images/game/stages/HellishFields/tree"));
         
         tree.animation.addByPrefix("tree", "tree", 12.0, true);
 

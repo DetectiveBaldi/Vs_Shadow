@@ -30,7 +30,7 @@ class Level1 extends GameState
     {
         super.create();
 
-        Assets.graphic(Paths.png("assets/images/game/Character/GARRETT"));
+        Assets.getGraphic(Paths.png("assets/images/game/Character/GARRETT"));
         
         gameCamera.visible = false;
 
